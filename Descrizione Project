@@ -1,8 +1,13 @@
 Il contenuto prevede uno smart contract scritto in Solidity,utilizzato per creare un token ERC-20 chiamato Stenfis,con simobol (STNs).Il codice utilizza alcune librerie pre-esistenti di OpenZeppelin
 
-Stenfis è il nome del contratto, dove si include il controllo di proprietà grazie allo strumento  Ownable che permette di l'inserimento di un un proprietario (owner) che può eseguire operazioni come la creazione di nuovi token.
+Stenfis è il nome del contratto, dove si include il controllo di proprietà grazie allo strumento  Ownable che permette  l'inserimento di un un proprietario (owner) che può eseguire operazioni come la creazione di nuovi token.
 Solo il proprietario può eseguire certe funzioni e al momento del del deployment il proprietario riceve 1000 token
 
 All'interno del contratto ci sono le funzioni di Mint, attraverso la quale il proprietario può creare nuovi token e la funzione di transfer attraverso la quale chiunque può trasferire i token.
+
+Sono state effettuati inizialmente dei test,in ambiente REMIX VM. Dopo la compilazione il contratto è stato deployato e provato le varie funzioni, tra cui quella di Mint e di transfer. 
+
+
+
 
 
