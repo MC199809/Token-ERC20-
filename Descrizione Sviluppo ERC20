@@ -1,13 +1,23 @@
 Il contenuto prevede uno smart contract scritto in Solidity,utilizzato per creare un token ERC-20 chiamato Stenfis,con simobol (STNs).Il codice utilizza alcune librerie pre-esistenti di OpenZeppelin
 
-Stenfis è il nome del contratto, dove si include il controllo di proprietà grazie allo strumento  Ownable che permette  l'inserimento di un un proprietario (owner) che può eseguire operazioni come la creazione di nuovi token.
-Solo il proprietario può eseguire certe funzioni e al momento del del deployment il proprietario riceve 1000 token
+Stenfis è il nome del contratto, dove si include il controllo di proprietà grazie allo strumento Ownable che permette l'inserimento di un un proprietario (owner) che può eseguire operazioni come la creazione di nuovi token.
+Solo il proprietario può eseguire certe funzioni e al momento del deployment il proprietario riceve 1000 token
 
-All'interno del contratto ci sono le funzioni di Mint, attraverso la quale il proprietario può creare nuovi token e la funzione di transfer attraverso la quale chiunque può trasferire i token.
+All'interno del contratto ci sono le funzioni di Mint, attraverso la quale il proprietario può creare nuovi token e la funzione di transfer attraverso la quale è possibile trasferire i token.
 
-Sono state effettuati inizialmente dei test,in ambiente REMIX VM. Dopo la compilazione il contratto è stato deployato e provato le varie funzioni, tra cui quella di Mint e di transfer. 
+Sono stati effettuati inizialmente dei test,in ambiente REMIX VM. Dopo la compilazione il contratto è stato deployato e sono state testate le varie funzioni, tra cui quella di Mint e di transfer.
 
+Successivamente, dopo aver verificato che in ambiente test REMIX, il contratto era funzionale, è stato deployato su rete testnet SEPOLIA. 
+È stato possibile attraverso la richiesta di token test (sempre su tesnet), utilizzando come provider Metamask.
 
+Questa è la Transaction Hash attraverso la quale sono stati ereditati i token test:
+0x5f116103a11ee73a890fa03bcec8a4064570d6dd1fd5ef9cd84df39e1e2ba20e 
 
+Smart Contract ERC20
+0x279422f3aD57Ef2Cac9646F2a6C3c80773e0bd0F
 
+Sepolia Testnet Explorer
+https://sepolia.etherscan.io/   
 
+Attraverso lo scanner, è possibile visionare che il deployment dello smart contract è avvenuto in data 08/03/2025, e sono state provate alcune funzioni. Sono stati mintati nuovi token nel wallet del proprietario, ed  è stata testata la funzione di transfer.
+Il contratto funziona perfettamente.  
